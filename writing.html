@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>互動寫作練習 - Lulu 英文挑戰地圖</title>
+<style>
+:root{--bg:#fff6e9;--ink:#30463b;--muted:#69786f;--green:#5f8069;--green2:#eef5ed;--line:#dfe6dd;--white:#fff;--shadow:0 10px 28px rgba(72,91,77,.09)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Microsoft YaHei","Noto Sans TC",system-ui,sans-serif;line-height:1.65}
+.wrap{width:min(1000px,calc(100% - 32px));margin:auto}
+header{padding:48px 0 28px}
+.back{display:inline-block;color:var(--green);font-size:18px;font-weight:800;text-decoration:none;margin-bottom:22px}
+h1{font-size:clamp(38px,5vw,50px);line-height:1.2;margin:0 0 12px}
+.lead{font-size:20px;color:var(--muted);margin:0;max-width:760px}
+section{padding:18px 0 52px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.card{display:flex;flex-direction:column;min-height:285px;padding:26px;background:#fff;border:1px solid var(--line);border-radius:22px;box-shadow:0 5px 18px rgba(72,91,77,.05);text-decoration:none;color:inherit;transition:.18s}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.icon{width:60px;height:60px;display:grid;place-items:center;border-radius:17px;background:var(--green2);font-size:31px}
+.card h2{font-size:25px;line-height:1.4;margin:18px 0 8px}
+.card p{font-size:18px;line-height:1.75;color:var(--muted);margin:0 0 18px}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.pill{font-size:15px;font-weight:800;padding:6px 10px;border-radius:999px;background:var(--green2);color:var(--green)}
+.cta{display:inline-flex;align-items:center;justify-content:center;width:100%;margin-top:auto;padding:15px 18px;border-radius:14px;background:var(--green);color:#fff;font-size:19px;font-weight:800;text-align:center}
+footer{text-align:center;color:var(--muted);font-size:15px;padding:0 0 34px}
+@media(max-width:700px){
+ .wrap{width:min(100% - 22px,1000px)}
+ header{padding-top:30px}
+ .back{font-size:19px}
+ h1{font-size:40px}
+ .lead{font-size:20px}
+ .grid{grid-template-columns:1fr}
+ .card{min-height:270px;padding:24px}
+ .card h2{font-size:27px}
+ .card p{font-size:20px}
+ .pill{font-size:16px}
+ .cta{font-size:21px;padding:16px 18px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="back" href="index.html">← 回到挑戰地圖</a>
+  <h1>互動寫作練習</h1>
+  <p class="lead">從不同作文題目出發，練習思考、組織與英文表達。</p>
+</header>
+<section>
+  <div class="grid">
+    <a class="card" href="https://oohya330-glitch.github.io/-self-driving-taxi/">
+      <div class="icon">🚕</div>
+      <h2>無人駕駛計程車</h2>
+      <p>從生活議題出發，練習整理想法並完成英文表達。</p>
+      <div class="tags"><span class="pill">科技生活</span><span class="pill">觀點表達</span></div>
+      <span class="cta">開始練習 →</span>
+    </a>
+  </div>
+</section>
+<footer>Lulu Wu · @oohya330</footer>
+</div>
+</body>
+</html>
