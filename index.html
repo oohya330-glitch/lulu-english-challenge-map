@@ -256,53 +256,6 @@
 }
 </style>
 
-<style id="compact-home-resource-button">
-/* 只縮小首頁「查看資源」按鈕，不更動資源頁內容 */
-.resource-card a,
-.resource-card .cta,
-.resource-card .button,
-.resource-card .btn {
-  width: auto !important;
-  min-width: 190px !important;
-  max-width: 260px !important;
-  flex: 0 0 auto !important;
-  padding: 13px 26px !important;
-  margin-left: auto !important;
-}
-@media (max-width: 700px) {
-  .resource-card a,
-  .resource-card .cta,
-  .resource-card .button,
-  .resource-card .btn {
-    width: auto !important;
-    min-width: 170px !important;
-    max-width: 230px !important;
-    margin-left: 0 !important;
-  }
-}
-</style>
-
-
-<style id="balanced-resource-card-width">
-/* 桌機：讓學習資源成為較輕的輔助入口；平板/手機仍自適應 */
-@media (min-width: 1001px) {
-  .resource-card {
-    width: 58% !important;
-    max-width: 720px !important;
-    min-width: 560px !important;
-    margin-right: auto !important;
-  }
-}
-@media (max-width: 1000px) {
-  .resource-card {
-    width: 100% !important;
-    max-width: none !important;
-    min-width: 0 !important;
-  }
-}
-</style>
-
-
 <style id="tag-button-spacing-fix">
 .tags {
   margin-bottom: 18px !important;
@@ -396,20 +349,26 @@
 
     <section aria-labelledby="resource-title">
       <div class="section-head">
-        <h2 id="resource-title">學習資源</h2>
+        <h2 id="resource-title">延伸練習與學習資源</h2>
         
       </div>
 
-      <a class="resource-card" href="resources.html">
-        <div class="resource-left">
+      <div class="grid extension-grid">
+        <a class="card" href="https://oohya330-glitch.github.io/gsat-translation-trainer/" target="_blank" rel="noopener noreferrer" aria-label="進入歷屆翻譯練寫器（新分頁開啟）">
+          <div class="icon">🧩</div>
+          <h3>歷屆翻譯練寫器</h3>
+          <p>拆解句子結構與關鍵表達，一步步完成翻譯，再換個情境練習。</p>
+          <div class="meta"><span class="pill">句子練寫</span><span class="pill">歷屆試題</span></div>
+          <span class="cta">開始練寫 →</span>
+        </a>
+        <a class="card" href="resources.html" aria-label="進入外部學習資源">
           <div class="icon">🧭</div>
-          <div>
-            <h3>外部學習資源</h3>
-            <p>歷屆試題、學習工具與推薦網站。</p>
-          </div>
-        </div>
-        <span class="cta">查看資源 →</span>
-      </a>
+          <h3>外部學習資源</h3>
+          <p>歷屆試題、學習工具與推薦網站。</p>
+          <div class="meta"><span class="pill">學習資源</span></div>
+          <span class="cta">查看資源 →</span>
+        </a>
+      </div>
     </section>
   </main>
 
